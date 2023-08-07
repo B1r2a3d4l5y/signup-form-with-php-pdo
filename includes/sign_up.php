@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
     if(empty($name|| $email|| $password) ) {
         header("Location:../index.html?signin=please fill in the fields");
         exit;
-    } else if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    } else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location:../index.html?email=invalidEmail");
         exit;
         
