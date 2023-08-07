@@ -1,5 +1,5 @@
 <?php
-$serverHost = "127.0.0.1";
+$serverHost = "localhos";
 $dbname = "signup_pdo";
 $dbUsername = "root";
 $dbPassword = "";
